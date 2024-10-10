@@ -36,8 +36,10 @@ require_once('./config/loader.php');
         <button type="submit" name="signup">Sign Up</button>
       </form>
     </div>
+
+    <!-- Sign In -->
     <div class="form-container sign-in">
-      <form>
+      <form method="POST" action="action/sign-in.php">
         <h1>Sign In</h1>
         <div class="social-icons">
           <a href="#" class="icons"><i class="fa-brands fa-google-plus-g"></i></a>
@@ -46,11 +48,11 @@ require_once('./config/loader.php');
           <a href="#" class="icons"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
         <span>or use your email/password</span>
-        <input type="text" placeholder="Mobile">
-        <input type="password" placeholder="password">
+        <input type="text" name="key" placeholder="Mobile / Email / Username">
+        <input type="password" name="password" placeholder="password">
         <a href="#">Forget your Password?</a>
         <div style="display: flex; gap: 10px;">
-            <button style="width: 150px;">Sign In</button>
+            <button style="width: 150px;" type="submit" name="signin">Sign In</button>
             <button style="width: 100px; background-color: white;"> <a href="otp.php">Send OTP</a></button>
         </div>
       </form>
