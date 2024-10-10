@@ -1,0 +1,13 @@
+register:
+id
+username
+email
+mobile
+password
+otp
+
+------------------------
+login:
+mobile / password
+-> OTP
+email / password
